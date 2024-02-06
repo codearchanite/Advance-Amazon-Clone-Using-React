@@ -18,7 +18,7 @@ const NavBar = () => {
           `https://api.postalpincode.in/pincode/${enteredPinCode}`
         );
 
-        // Check if the API response is successful and has data
+
         if (
           response &&
           response.data &&
@@ -38,9 +38,7 @@ const NavBar = () => {
   };
 
   const responseGoogle = (response) => {
-    // Handle the Google Sign-In response
     console.log(response);
-    // You can perform additional actions based on the response, e.g., user authentication
   };
 
   return (
@@ -93,9 +91,6 @@ const NavBar = () => {
             <option value="MR" className="p-2 bg-gray-300 text-black">MR (म़)</option>
             <option value="OD" className="p-2 bg-gray-300 text-black">OD (ଓ)</option>
             <option value="BN" className="p-2 bg-gray-300 text-black">BN (বে)</option>
-              
-
-              {/* Add more languages as needed */}
             </select>
           </div>
           <div className="absolute right-2 top-2 pointer-events-none flex items-center">
